@@ -138,7 +138,7 @@ wavetime:help( "Set time until wave start/end" )
 
 function ulx.givepoints( caller, targets, points )
 	for i = 1, #targets do
-		targets[ i ]:AddFrags( points )
+		targets[ i ]:AddPoints( points )
 	end
 
 	ulx.fancyLogAdmin( caller, "#A gave #i points to #T", points, targets )
